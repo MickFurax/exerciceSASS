@@ -1,0 +1,70 @@
+
+body {
+    font-family: 'Biryani', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Variables
+$primary-color: #f37151;
+$secondary-color: #f0a34a;
+$text-color: #52555b;
+
+// Mixins
+@mixin text-color {
+    color: $text-color;
+    opacity: 0.8;
+}
+
+@mixin gradient($color1, $color2) {
+    background-image: linear-gradient(90deg, $color2, $color1);
+}
+
+@mixin button {
+    @include gradient($primary-color, $secondary-color);
+    color: white;
+    border: 0;
+    height: 35px;
+}
+// CSS
+header {
+    .main__left{
+        width: 50%;
+        float: left;
+        margin: 0;
+        padding: 100px;
+        text-align: start;
+        h1 {
+            color: $text-color;
+            margin: 0; // A changer
+            font-size: 58px;
+            font-weight: 800;
+        }
+        span {
+            @include text-color;
+            font-weight: 300;
+            margin: 0; // A changer
+        }
+        hr {
+            @include gradient($primary-color, $secondary-color);
+            width: 80px;
+            height: 2px;
+            border: 0;
+            margin: 0; // A changer
+            margin-top: 30px;
+        }
+        button {
+            @include button();     
+            width: 130px;
+            border-radius: 3px;
+            margin-top: 30px;
+
+        }
+    }
+    
+    .main__right{
+        width: 50%;
+        float: right;
+        margin: 0;
+    }
+}

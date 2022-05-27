@@ -1,0 +1,55 @@
+body {
+  font-family: 'Biryani', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header .main__left {
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 100px;
+  text-align: start;
+}
+
+header .main__left h1 {
+  color: #52555b;
+  margin: 0;
+  font-size: 58px;
+  font-weight: 800;
+}
+
+header .main__left span {
+  color: #52555b;
+  opacity: 0.8;
+  font-weight: 300;
+  margin: 0;
+}
+
+header .main__left hr {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f0a34a), to(#f37151));
+  background-image: linear-gradient(90deg, #f0a34a, #f37151);
+  width: 80px;
+  height: 2px;
+  border: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+header .main__left button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f0a34a), to(#f37151));
+  background-image: linear-gradient(90deg, #f0a34a, #f37151);
+  color: white;
+  border: 0;
+  height: 35px;
+  width: 130px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+header .main__right {
+  width: 50%;
+  float: right;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
