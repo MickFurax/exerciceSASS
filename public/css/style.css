@@ -2,28 +2,29 @@ body {
   font-family: "Biryani", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
-header .main__left {
+header .header__left {
   width: 50%;
   float: left;
   margin: 0;
   padding: 100px;
   text-align: start;
 }
-header .main__left h1 {
+header .header__left h1 {
   color: #52555b;
   margin: 0;
   font-size: 58px;
   font-weight: 800;
 }
-header .main__left span {
+header .header__left span {
   color: #52555b;
   opacity: 0.8;
   font-weight: 300;
   margin: 0;
 }
-header .main__left hr {
+header .header__left hr {
   background-image: linear-gradient(90deg, #f0a34a, #f37151);
   width: 80px;
   height: 2px;
@@ -31,7 +32,7 @@ header .main__left hr {
   margin: 0;
   margin-top: 30px;
 }
-header .main__left button {
+header .header__left button {
   background-image: linear-gradient(90deg, #f0a34a, #f37151);
   color: white;
   border: 0;
@@ -40,10 +41,37 @@ header .main__left button {
   border-radius: 3px;
   margin-top: 30px;
 }
-header .main__right {
+header .header__right {
   width: 50%;
   float: right;
   margin: 0;
+}
+header .header__right--blob {
+  position: absolute;
+  width: 925px;
+  height: 533px;
+  left: 441px;
+  top: 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .header__left {
+    width: 100%;
+    margin: 0;
+    padding: 100px;
+    text-align: start;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  h1 {
+    color: #52555b;
+    margin: 0;
+    font-size: 29px !important;
+    font-weight: 800;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
